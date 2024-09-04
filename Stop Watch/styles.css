@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--main-bg-color);
+    font-family: Arial, sans-serif;
+}
+
+.stopwatch {
+    text-align: center;
+    background-color: var(--display-color);
+    padding: 150px 81px 150px 81px;   
+    border-radius: 100%;
+    border: solid 5px #3a4750;
+}
+
+#display {
+    font-size: 5em;
+    font-family: monospace;
+    margin-bottom: 20px;
+    color: var(--main-text-color);
+}
+
+#start {
+    background-color: var(--start-bg-color); 
+    color: var(--main-text-color);
+    padding: 1.3rem 0.8rem 1.3rem 0.8rem;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#start:hover{
+   background-color: hsl(214, 100%, 20%);
+}
+
+#start:hover:active{
+   background-color: hsl(214, 100%, 15%);
+}
+
+#stop {
+    background-color: var(--stop-bg-color);
+    color: var(--main-text-color);
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    border-radius: 100%;
+    border: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#stop:hover {
+    background-color: hsl(352, 59%, 20%);
+}
+
+#stop:hover:active{
+    background-color: hsl(352, 59%, 15%);
+}
+
+#reset {
+    background-color: var(--reset-bg-color);
+    color: var(--main-text-color);
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#reset:hover {
+    background-color: hsl(200, 36%, 20%);
+}
+
+#reset:hover:active{
+    background-color: hsl(200, 36%, 15);
+}
+
+:root {
+    --display-color: #222831;
+    --start-bg-color: #00204a;
+    --stop-bg-color: #be3144;
+    --reset-bg-color: #407088;
+    --main-text-color: white;
+    --main-bg-color: #303841;
+}
+
+
