@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer Service Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Customer Service Survey</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to finish this survey
+        </p>
+      </header>
+      <form action="#" id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+
+        <div class="form-group">
+          <p>What best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="customer">Customer</option>
+            <option value="business">Business Owner/Manager</option>
+            <option value="employee">Employee</option>
+            <option value="freelance">Freelance</option>
+            <option value="contractor">Contractor</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>How would you rate the quality of service you received?</p>
+          <label><input name="user-rating" value="excellent" type="radio" class="input-radio" checked>Excellent</label>
+          <label><input name="user-rating" value="good" type="radio" class="input-radio">Good</label>
+          <label><input name="user-rating" value="fair" type="radio" class="input-radio">Fair</label>
+          <label><input name="user-rating" value="poor" type="radio" class="input-radio">Poor</label>
+        </div>
+
+        <div class="form-group">
+          <p>How responsive was our team to your needs?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="extremely-responsive">Extremely Responsive</option>
+            <option value="somewhat-responsive">Somewhat Responsive</option>
+            <option value="neutral">Neutral</option>
+            <option value="somewhat-unresponsive">Somewhat Unresponsive</option>
+            <option value="not-responsive">Not Responsive at All</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>How likely are you to recommend our service to others?</p>
+          <label><input name="user-recommend" value="very-likely" type="radio" class="input-radio" checked>Very Likely</label>
+          <label><input name="user-recommend" value="likely" type="radio" class="input-radio">Likely</label>
+          <label><input name="user-recommend" value="neutral" type="radio" class="input-radio">Neutral</label>
+          <label><input name="user-recommend" value="unlikely" type="radio" class="input-radio">Unlikely</label>
+          <label><input name="user-recommend" value="very-unlikely" type="radio" class="input-radio">Very Unlikely</label>
+        </div>
+
+        <div class="form-group">
+          <p>What would you like to see improved in our service?<span class="clue">(Check all that apply)</span></p>
+          <label><input name="user-suggestion" value="response-time" type="checkbox" class="input-checkbox">Response Time</label>
+          <label><input name="user-suggestion" value="staff-knowledge" type="checkbox"  class="input-checkbox">Staff Knowledge</label>
+          <label><input name="user-suggestion" value="communication" type="checkbox" class="input-checkbox">Communication</label>
+          <label><input name="user-suggestion" value="service-quality" type="checkbox" class="input-checkbox">Service Quality</label>
+          <label><input name="user-suggestion" value="availability" type="checkbox" class="input-checkbox">Availability of Support</label>
+          <label><input name="user-suggestion" value="online-resources" type="checkbox" class="input-checkbox">Online Resources</label>
+          <label><input name="user-suggestion" value="follow-up" type="checkbox" class="input-checkbox">Follow Up Procedures</label>
+          <label><input name="user-suggestion" value="pricing-transparency" type="checkbox" class="input-checkbox">Pricing Transparency</label>
+          <label><input name="user-suggestion" value="feedback-implementation" type="checkbox" class="input-checkbox">Customer Feedback Implementation</label>
+          <label><input name="user-suggestion" value="overall-experience" type="checkbox" class="input-checkbox">Overall Experience</label>
+        </div>
+
+        <div class="form-group">
+          <p>Do you have any comments?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
