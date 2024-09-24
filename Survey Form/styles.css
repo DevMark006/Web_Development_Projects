@@ -97,8 +97,10 @@ button {
 
 .description {
   font-style: italic;
-  font-weight: 200;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: black;
 }
 
 .clue {
@@ -109,8 +111,8 @@ button {
 
 .text-center {
   text-align: center;
-  color: hsla(180, 11%, 2%, 0.925);
-  font-weight: 500;
+  color: hsl(0, 0%, 0%);
+  font-weight: 700;
 }
 
 form {
